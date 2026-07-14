@@ -1,0 +1,37 @@
+class Numbers:
+    def __init__(self, n):
+        self.NumList = []
+        self.n = n
+    
+    def GetNumbers(self):
+        for i in range(self.n):
+            self.NumList.append(i+1)
+        return self.NumList
+            
+class Factorial:
+    def __init__(self, number):
+        self.NumList2 = number
+    
+    def factorial(self):
+        prod = 1
+        for elem in self.NumList2:
+            prod *= elem
+        return prod
+
+class ConsecutiveSum:
+    def __init__(self, number):
+        self.NumList3 = number
+    
+    def consecutivesum(self):
+        sum = 0
+        for elem in self.NumList3:
+            sum += elem
+        return sum
+
+
+number = Numbers(100)
+fact = Factorial(number.NumList)
+consum = ConsecutiveSum(number.NumList)
+#print(number.GetNumbers())
+print(fact.factorial())
+print(consum.consecutivesum())

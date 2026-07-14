@@ -1,0 +1,17 @@
+word = input('Enter a single word, dummy:')
+string = input('Now, enter a string of letters (randomly), doofus:')
+
+
+def wordfinder(word, string):
+    x = 0
+    for elem in word:
+        if elem in string:
+            x += 1 
+        else:
+            continue
+    if len(word) == x:
+        print('Yes')
+    else:
+        print('Nope')
+        
+wordfinder(word, string)
