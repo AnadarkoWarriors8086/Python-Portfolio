@@ -1,3 +1,7 @@
+#This dashboard was created as a project to display my ability to create interactive dashboards.
+#This dashboard displays an expense .xlsx file. It allows for filtering by expense category, date, and description
+#There is a separate tab for manual entries that are written to the .xlsx file.
+
 import streamlit as st
 import pandas as pd
 import numpy as np
