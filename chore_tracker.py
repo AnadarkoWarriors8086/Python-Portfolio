@@ -1,3 +1,6 @@
+#This app was created to help keep track of my children's chores and their allowances.
+
+
 import flet as ft
 
 #This block will be where any page configurations are stored.
